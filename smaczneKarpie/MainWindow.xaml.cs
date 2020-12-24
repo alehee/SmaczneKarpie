@@ -47,7 +47,7 @@ namespace smaczneKarpie
         public MainWindow()
         {
             InitializeComponent();
-            L_Version.Content = "v. 1.0.2";
+            L_Version.Content = "v. 1.1.0";
 
             timer = new System.Timers.Timer(1500);
             timer.Elapsed += catchFish;
@@ -235,11 +235,14 @@ namespace smaczneKarpie
 
         void getMouseCoords(Object source, ElapsedEventArgs e)
         {
-            Dispatcher.BeginInvoke(new Action(() => {
-                Point locationFromWindow = TranslatePoint(new Point(0, 0), this);
-                Point locationFromScreen = PointToScreen(locationFromWindow);
-                L_MouseCoords.Content = locationFromScreen.ToString();
-            }));
+            try
+            {
+                Dispatcher.BeginInvoke(new Action(() => {
+                    Point locationFromWindow = TranslatePoint(new Point(0, 0), this);
+                    Point locationFromScreen = PointToScreen(locationFromWindow);
+                    L_MouseCoords.Content = locationFromScreen.ToString();
+                }));
+            }catch(Exception ee) {  }
         }
 
         void catchFish(Object source, ElapsedEventArgs e)

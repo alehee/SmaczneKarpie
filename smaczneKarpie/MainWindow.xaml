@@ -8,29 +8,35 @@
         Title="Smaczne Karpie" Height="400" Width="400" Icon="fish.gif">
     <Grid>
         <Image Margin="0,300,250,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Height="120" Source="Cheese Software Text Black.png"/>
-        <Button x:Name="B_Toggle" Content="Zacznij łowić" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Center" Width="150" Height="30" Click="B_Toggle_Click" Foreground="#FF0074FF" BorderBrush="Black" Background="#FFB0CCEE"/>
+        <Button x:Name="B_Toggle" Content="Start fishing" HorizontalAlignment="Center" Margin="0,220,0,0" VerticalAlignment="Center" Width="150" Height="30" Click="B_Toggle_Click" Foreground="#FF0074FF" BorderBrush="Black" Background="#FFB0CCEE"/>
+        <Label Content="Screen coords" HorizontalAlignment="Center" Margin="250,0,0,130" VerticalAlignment="Center" FontSize="10"/>
         <Label x:Name="L_MouseCoords" Content="Running script..." HorizontalAlignment="Center" Margin="250,0,0,100" VerticalAlignment="Center" FontSize="8"/>
         <Label Content="Left upper app corner gets the coords" HorizontalAlignment="Center" Margin="0,0,230,340" VerticalAlignment="Center" FontSize="8" Foreground="Red" FontWeight="Bold"/>
-        <TextBox x:Name="TB_XStart" HorizontalAlignment="Center" Height="20" Margin="0,50,250,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="80" Background="#FFFFAEAE" BorderBrush="Black"/>
-        <TextBox x:Name="TB_YStart" HorizontalAlignment="Center" Height="20" Margin="0,120,250,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="80" Background="#FFFFAEAE" BorderBrush="Black"/>
-        <TextBox x:Name="TB_XEnd" HorizontalAlignment="Center" Height="20" Margin="150,50,150,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="80" Background="#FFB9FFAE" BorderBrush="Black"/>
-        <TextBox x:Name="TB_YEnd" HorizontalAlignment="Center" Height="20" Margin="150,120,150,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="80" Background="#FFB9FFAE" BorderBrush="Black"/>
+        <TextBox x:Name="TB_XStart" HorizontalAlignment="Center" Height="20" Margin="0,70,250,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="80" Background="#FFFFAEAE" BorderBrush="Black"/>
+        <TextBox x:Name="TB_YStart" HorizontalAlignment="Center" Height="20" Margin="0,140,250,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="80" Background="#FFFFAEAE" BorderBrush="Black"/>
+        <TextBox x:Name="TB_XEnd" HorizontalAlignment="Center" Height="20" Margin="150,70,150,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="80" Background="#FFB9FFAE" BorderBrush="Black"/>
+        <TextBox x:Name="TB_YEnd" HorizontalAlignment="Center" Height="20" Margin="150,140,150,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="80" Background="#FFB9FFAE" BorderBrush="Black"/>
         <TextBox x:Name="TB_EatTime" HorizontalAlignment="Center" Height="20" Margin="250,50,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="80" Background="#FF00D1FF" BorderBrush="Black"/>
         <TextBox x:Name="TB_RuneTime" HorizontalAlignment="Center" Height="20" Margin="250,120,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="80" Background="#FFFFC500" BorderBrush="Black"/>
-        <Image Margin="0,0,0,200" Source="fish.gif" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Height="120"/>
-        <Label Content="Buttons" Margin="0,0,0,70" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Image Margin="0,0,0,200" Source="fish.gif" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="100"/>
+        <Label Content="Hotkeys" Margin="0,0,0,90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label x:Name="L_Version" Content="v. 1.0.0" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" FontSize="10"/>
         <Label x:Name="L_Log" Content="Log" Margin="0,300,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14"/>
-        <Label Content="Fishing" HorizontalAlignment="Center" Margin="0,85,120,70" VerticalAlignment="Center" FontSize="8"/>
-        <Label Content="X" HorizontalAlignment="Center" Margin="0,50,350,0" VerticalAlignment="Center" FontSize="8"/>
-        <Label Content="Y" HorizontalAlignment="Center" Margin="0,120,350,0" VerticalAlignment="Center" FontSize="8"/>
-        <Label Content="X" HorizontalAlignment="Center" Margin="0,50,100,0" VerticalAlignment="Center" FontSize="8"/>
-        <Label Content="Y" HorizontalAlignment="Center" Margin="0,120,100,0" VerticalAlignment="Center" FontSize="8"/>
-        <Label Content="Eat Time" HorizontalAlignment="Center" Margin="250,20,0,0" VerticalAlignment="Center" FontSize="8"/>
-        <Label Content="Rune Time" HorizontalAlignment="Center" Margin="250,87,0,0" VerticalAlignment="Center" FontSize="8"/>
-        <Label Content="Trzymaj ALT aby wyłączyć" HorizontalAlignment="Center" Margin="0,155,0,0" VerticalAlignment="Center" FontSize="8"/>
+        <Label Content="Fishing screen area" HorizontalAlignment="Center" Margin="0,85,120,70" VerticalAlignment="Center" FontSize="8"/>
+        <Label Content="Left upper corner" HorizontalAlignment="Center" Margin="0,105,250,70" VerticalAlignment="Center" FontSize="8"/>
+        <Label Content="Right bottom corner" HorizontalAlignment="Center" Margin="0,105,0,70" VerticalAlignment="Center" FontSize="8"/>
+        <Label Content="X" HorizontalAlignment="Center" Margin="0,70,350,0" VerticalAlignment="Center" FontSize="8"/>
+        <Label Content="Y" HorizontalAlignment="Center" Margin="0,140,350,0" VerticalAlignment="Center" FontSize="8"/>
+        <Label Content="X" HorizontalAlignment="Center" Margin="0,70,100,0" VerticalAlignment="Center" FontSize="8"/>
+        <Label Content="Y" HorizontalAlignment="Center" Margin="0,140,100,0" VerticalAlignment="Center" FontSize="8"/>
+        <Label Content="Eat Time (seconds)" HorizontalAlignment="Center" Margin="250,20,0,0" VerticalAlignment="Center" FontSize="8"/>
+        <Label Content="Rune Making Time (seconds)" HorizontalAlignment="Center" Margin="250,87,0,0" VerticalAlignment="Center" FontSize="8"/>
+        <Label Content="Hold ALT to turn off while fishing" HorizontalAlignment="Center" Margin="0,175,0,0" VerticalAlignment="Center" FontSize="8"/>
+        <Label Content="Fishing" Margin="0,0,250,60" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
         <ComboBox x:Name="CB_Fishing" HorizontalAlignment="Center" Margin="0,0,250,20" VerticalAlignment="Center" Width="80" RenderTransformOrigin="0.194,0.391" Height="20" IsReadOnly="True"/>
+        <Label Content="Eating" Margin="0,0,0,60" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
         <ComboBox x:Name="CB_Eat" HorizontalAlignment="Center" Margin="0,0,0,20" VerticalAlignment="Center" Width="80" RenderTransformOrigin="0.194,0.391" Height="20" IsReadOnly="True"/>
+        <Label Content="Rune making" Margin="250,0,0,60" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
         <ComboBox x:Name="CB_Rune" HorizontalAlignment="Center" Margin="250,0,0,20" VerticalAlignment="Center" Width="80" RenderTransformOrigin="0.194,0.391" Height="20" IsReadOnly="True"/>
     </Grid>
 </Window>
